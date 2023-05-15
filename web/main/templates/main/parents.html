@@ -1,0 +1,54 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Для родителей{% endblock %}
+
+{% block content %}
+     <div class="features">
+          <h1>Для родителей</h1>
+          <p>Узнайте, куда вашему ребенку лучше поступить в зависимости от его успехов в школьных предметах и интересов!</p>
+          <hr>
+     </div>
+     <div class="images">
+         <br><img src="{% static 'main/img/fm.jpg' %}" width="300" height="175" alt="БИ" class="it">
+         <br><img src="{% static 'main/img/pmi.jpg' %}" width="300" height="175" alt="ПМИ" class="it">
+     </div>
+     <div class="pref">
+         <h3>Рекоммендация</h3>
+         <p>На этой странице Вы сможете посмотреть, какое направление обучения факультета ИМиКН рекоммендуется Вашему ребенку на основе его предпочтений и успехов в школе!</p>
+         <hr>
+         <p>Пожалуйста, выберите правильные для Вашего ребенка ответы в каждом пункте!</p>
+         <p>Моему ребенку интересны такие сферы как:</p>
+         <p><select name="pref1" id="pref1-select">
+                <option value="value1">----Выберите ответ----</option>
+                <option value="value2">Программирование</option>
+                <option value="value3">Аналитика</option>
+                <option value="value4">Исследования</option>
+                <option value="value5">Бизнес</option>
+            </select>
+            <select name="pref2" id="pref2-select">
+                <option value="value1">----Выберите ответ----</option>
+                <option value="value2">Программирование</option>
+                <option value="value3">Аналитика</option>
+                <option value="value4">Исследования</option>
+                <option value="value5">Бизнес</option>
+            </select>
+         </p>
+         <p>Мой ребенок успешен в таких предметах как:</p>
+         <p><select name="school1" id="school1-select">
+               <option value="value1">----Выберите ответ----</option>
+               <option value="value2">Математика</option>
+               <option value="value3">Информатика</option>
+               <option value="value4">Экономика</option>
+             </select>
+             <select name="school2" id="school2-select">
+               <option value="value1">----Выберите ответ----</option>
+               <option value="value2">Математика</option>
+               <option value="value3">Информатика</option>
+               <option value="value4">Экономика</option>
+             </select>
+         </p>
+         <hr>
+         <p>Узнать результат:</p>
+     </div>
+{% endblock %}
